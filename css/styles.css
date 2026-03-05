@@ -53,9 +53,7 @@ main {
   from {
     background-color: rgb(20, 7, 44);
     color: rgb(20, 7, 44);
-    
   }
-
   to {
     color: white;
     background-color: rgba(255, 213, 5);
@@ -128,7 +126,7 @@ main {
     padding: 1rem 3rem;
     border-radius: 1rem;
 
-  position: relative;
+     position: relative;
 }
 
 .create-button::before {
@@ -153,8 +151,8 @@ main {
 }
 
 .create-button:hover::before {
-    width: 200%;
-    height: 200%;
+    width: 150%;
+    height: 150%;
 }
 
 .create-button:hover {
@@ -164,12 +162,14 @@ main {
 /* Sentence 5 */
 
 .page5 {
-    background-color: rgb(63, 197, 255);
+    background-image: linear-gradient(to top, rgb(33, 175, 223), rgb(139, 204, 242));
+    background-repeat: no-repeat;
+    background-attachment: fixed;
 }
 
 .repeat-button {
-    background: rgb(63, 71, 99);
-    color: white;
+    background: rgb(251, 252, 255);
+    color: rgb(28, 66, 141);
     font-family: "Audiowide";
 
     border: none;
@@ -182,7 +182,7 @@ main {
 
 .repeat-button:hover {
   box-shadow:
-    5px 5px 0px rgba(63, 71, 99, 0.3),
-    10px 10px 0px rgba(63, 71, 99, 0.2),
-    15px 15px 0px rgba(63, 71, 99, 0.1);
+    5px 5px 0px rgba(251, 252, 255, .3),
+    10px 10px 0px rgba(251, 252, 255, .2),
+    15px 15px 0px rgba(251, 252, 255, .1);
 }
