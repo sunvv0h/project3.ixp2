@@ -1,0 +1,188 @@
+/* Global */
+:root {
+    --margin-outside: 1rem;
+    --margin-bottom: 3rem;
+}
+
+.story_sentence {
+    font-family: "Sora", Arial;
+    margin: 3rem 1rem;
+}
+
+main {
+    text-align: center;
+}
+
+/* Sentence 1 */
+.page1 {
+    background-image: linear-gradient(to top, rgb(8, 4, 29), rgb(22, 13, 65));
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    color: bisque;
+}
+
+.glow-button {
+    font-family: "Titan One";
+
+    color: white;
+    background-color: rgb(38, 33, 103);
+
+    padding: 1rem 3rem;
+    border-radius: 1rem;
+
+    transition: 
+        box-shadow 1s,
+        color 1s,
+        background-color 1s;
+}
+
+.glow-button:hover {
+    box-shadow: 0 0 1.5rem .5rem rgba(255, 213, 5, .75);
+    color: rgb(45, 44, 60);
+    background-color: rgba(255, 213, 5, .75);
+}
+
+/* Sentence 2 */
+.page2 {
+    background-image: linear-gradient(to top, rgb(51, 39, 156), rgb(139, 128, 235));
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+}
+
+@keyframes slidein {
+  from {
+    background-color: rgb(20, 7, 44);
+    color: rgb(20, 7, 44);
+    
+  }
+
+  to {
+    color: white;
+    background-color: rgba(255, 213, 5);
+  }
+}
+
+
+.slowly-button {
+    font-family: "Comic Relief";
+
+    background-color: rgb(20, 7, 44);
+    color: rgb(20, 7, 44);
+
+    padding: 1rem 3rem;
+    border-radius: 1rem;
+}
+
+.slowly-button:hover {
+    animation-name: slidein;
+    animation-duration: 20s;
+    animation-timing-function: linear;
+}
+
+/* Sentence 3 */
+
+.page3 {
+    background-color: rgb(255, 252, 244);
+}
+
+.filled-button {
+    color: #cbe6e8;
+    border: 3px solid #cbe6e8;
+    font-family: "Cherry Bomb One";
+
+    padding: 3rem;
+    border-radius: 1rem;
+
+    position: relative;
+    overflow: hidden; 
+    transition: color 5s;
+}
+
+.filled-button::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    z-index: -1;
+
+    height: 100%;
+    width: 100%;
+    background-color: #4d55ef;
+
+    transform: translateY(100%);
+    transition: transform 5s;
+}
+
+.filled-button:hover::before {
+    transform: translateY(0);
+}
+
+/* Sentence 4 */
+
+.create-button {
+    color: #ffffff00;
+    border: 3px solid #000000;
+    font-family: "Poppins";
+    font-size: 1.5rem;
+
+    padding: 1rem 3rem;
+    border-radius: 1rem;
+
+  position: relative;
+}
+
+.create-button::before {
+    content: "";
+
+    color: white;
+    background: black;
+    border-radius: 2rem;
+
+    position: absolute;
+    z-index: -1;
+
+    top: 50%;
+    left: 50%;
+    width: 0%;
+    height: 0%;
+
+    transform: translate(-50%, -50%);
+    transition: 
+    width .4s ease,
+    height .4s ease;
+}
+
+.create-button:hover::before {
+    width: 200%;
+    height: 200%;
+}
+
+.create-button:hover {
+    color: white;
+}
+
+/* Sentence 5 */
+
+.page5 {
+    background-color: rgb(63, 197, 255);
+}
+
+.repeat-button {
+    background: rgb(63, 71, 99);
+    color: white;
+    font-family: "Audiowide";
+
+    border: none;
+    padding: 1rem 2rem;
+    border-top-left-radius: 1rem;
+    border-bottom-right-radius: 1rem;
+
+    transition: box-shadow 0.2s;
+}
+
+.repeat-button:hover {
+  box-shadow:
+    5px 5px 0px rgba(63, 71, 99, 0.3),
+    10px 10px 0px rgba(63, 71, 99, 0.2),
+    15px 15px 0px rgba(63, 71, 99, 0.1);
+}
